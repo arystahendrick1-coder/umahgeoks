@@ -52,7 +52,9 @@ h2{font-size:clamp(2rem,4.5vw,2.8rem)}
 .slider{position:relative}
 .track{display:flex;gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .track::-webkit-scrollbar{display:none}
-.slide{flex:0 0 calc((100% - 28px)/2);aspect-ratio:4/3;scroll-snap-align:start;background:#9aa6a5;overflow:hidden}
+/* Accommodation slider: wider viewing area while keeping the original desktop photo width */
+.accom .slider{width:calc(100vw - 48px);position:relative;left:50%;transform:translateX(-50%)}
+.accom .slide{flex:0 0 calc((min(100vw, 1180px) - 76px)/2);aspect-ratio:4/3;scroll-snap-align:start;background:#9aa6a5;overflow:hidden}
 .slide img{width:100%;height:100%;object-fit:cover}
 .arrow{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);font-size:1.5rem;line-height:1;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .arrow:hover{background:#fff}
@@ -125,11 +127,12 @@ footer a{text-decoration:none}
   form{grid-template-columns:1fr}
   form .btn,.note{grid-column:1}
   section{padding:52px 0}
-  .slide{flex-basis:100%}
+  .accom .slide{flex-basis:100%}
   .arrow{width:38px;height:38px}
 }
 @media(max-width:480px){
   .wrap{padding:0 12px}
+  .accom .slider{width:calc(100vw - 24px)}
   nav ul{gap:8px}
   nav ul a,nav .btn{font-size:.68rem}
   nav .btn{padding:.35rem .6rem}
