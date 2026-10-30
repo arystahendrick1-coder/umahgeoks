@@ -86,10 +86,15 @@ h2{font-size:clamp(2rem,4.5vw,2.8rem)}
 .quotes .list p{color:#e6ebeb}
 .quotes .who{text-align:right;font-weight:600;margin-top:18px}
 
-.contact{text-align:center;background:var(--paper)}
+.contact{text-align:center;background:var(--bg)}
 .contact h2{margin-bottom:12px}
 .contact .lead{color:var(--muted);max-width:60ch;margin:0 auto 40px}
-.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left;max-width:760px;margin:0 auto;font-size:.9rem;color:var(--muted)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left;max-width:860px;margin:0 auto;font-size:.9rem;color:var(--muted)}
+.social{display:flex;gap:10px;margin-top:12px}
+.social a{display:inline-flex;width:22px;height:22px;border-radius:50%;background:#000}
+.social svg{width:100%;height:100%}
+.map{max-width:860px;margin:48px auto 0;height:340px;background:#cfd6d6}
+.map iframe{width:100%;height:100%;border:0;display:block}
 .cols h3{font-size:1.05rem;color:var(--ink);margin-bottom:8px;font-family:'Quicksand',sans-serif}
 .cols a{text-decoration:none}
 .cols a:hover{text-decoration:underline}
@@ -242,9 +247,16 @@ footer a{text-decoration:none}
     <p class="lead">Have any queries or need assistance? Feel free to reach out to us. We are here to ensure your homestay at Umah GEOKS is filled with warmth and authenticity.</p>
     <div class="cols">
       <div><h3>Address</h3><p>Jl. Raya Singapadu Gang Beji No.18, Singapadu, Sukawati, Gianyar Regency, Bali 80582</p></div>
-      <div><h3>Contact</h3><p><a href="tel:+6282146568014">+62 821-4656-8014</a><br><a href="mailto:umahgeoks@gmail.com">umahgeoks@gmail.com</a></p></div>
+      <div><h3>Contact</h3><p><a href="tel:+6282146568014">+62 821-4656-8014</a><br><a href="mailto:umahgeoks@gmail.com">umahgeoks@gmail.com</a></p>
+        <div class="social">
+          <a class="wa" href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none"><path d="M12 5a7 7 0 0 0-6 10.6L5 19l3.500-.9A7 7 0 1 0 12 5z" stroke="#fff" stroke-width="1.500"/><path d="M9.500 9c.3 2.200 2.100 4 4.300 4.300l.9-1-1.400-.8-.7.500c-.8-.3-1.400-1-1.700-1.800l.5-.7-.8-1.400z" fill="#fff"/></svg></a>
+          <a href="#" id="ig" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.500"><rect x="6" y="6" width="12" height="12" rx="3.500"/><circle cx="12" cy="12" r="2.800"/><circle cx="15.600" cy="8.400" r=".6" fill="#fff"/></svg></a>
+          <a href="#" id="fb" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.200 19v-6h2l.4-2.400h-2.400V9.200c0-.7.300-1.200 1.300-1.200h1.200V6a14 14 0 0 0-1.800-.1c-1.800 0-3 1.100-3 3.100v1.600H8.800V13h2.100v6z" fill="#fff"/></svg></a>
+        </div></div>
       <div><h3>Opening Hours</h3><p>Everyday, 24 Hours</p></div>
     </div>
+
+    <div class="map"><iframe title="Lokasi Umah GEOKS di Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Umah+GEOKS,+Jl.+Raya+Singapadu+Gang+Beji+No.18,+Singapadu,+Sukawati,+Gianyar,+Bali+80582&amp;output=embed"></iframe></div>
 
     <form id="qform" action="https://formspree.io/f/GANTI_DENGAN_ID_FORMSPREE" method="POST">
       <h3>Any questions about Umah GEOKS?</h3>
